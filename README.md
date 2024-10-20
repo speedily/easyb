@@ -52,8 +52,8 @@ And  a flow chart:
 
 ```mermaid
 graph LR
-A[Customer] -- Click On Easy Base Link on Browser --> B((EasyBase Payment Page))
-A -- Scans Easy Base QR on MetaMask App In Phone(Android/IPhone) --> C(EasyBase Payment Page)
+A[Customer] -- Click On EasyBase Link on Laptop Browser --> B((EasyBase Payment Page))
+A -- Scans EasyBase QR on MetaMask App In Phone(Android/IPhone) --> C(EasyBase Payment Page)
 B --> D{Base Network Transaction}
 C --> D
 ```
