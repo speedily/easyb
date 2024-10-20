@@ -40,7 +40,7 @@ Easybase converts base wallet address into "payment" collection pages for faster
 sequenceDiagram
 
 Bob(Seller)--x Indian Bank: Crypto Gateway Is Not Provided!
-Bank-x Indian Fintech: We Need $1 Billion In Funding To Build It
+Bob(Seller)-x Indian Fintech: We Need $1 Billion In Funding To Build It
 
 
 Bob(Seller)-->Leading Crypto Platform: In Old System Bob Will Go Though So Many People...
