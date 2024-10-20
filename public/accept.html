@@ -1,0 +1,60 @@
+//sniff the url and find the user wallet address
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Username Extraction</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"></script>
+
+</head>
+<body>
+  <p id="username"></p>
+
+  
+    <h1>Wallet Payment with Base Eth</h1>
+    Steps To Pay:
+    <ul>
+        <li>1. Connect Your Wallet To MetaMask Or Other Base Network Wallet</li>
+        <li>2. Confirm The Amount You Wish To Pay</li>
+        <li>3. Click Send Payment Button</li>
+        <li>4. When Your Wallet Opens From Browser Select Confirm Payment</li>
+        </ul>
+    
+    
+    
+    
+    <button id="connectButton">Connect Your Wallet First</button>
+    <div>
+        <input type="text" id="recipientAddress" placeholder="Recipient Address" />
+        <input type="number" id="amount" placeholder="Amount (ETH)" />
+        <button id="sendButton">Send Payment</button>
+    </div>
+    <script src="accept.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+    // Parse the current URL
+    var url = new URL(window.location.href);
+    
+    // Check if the URL matches the desired format
+    if (url.pathname.startsWith("/@")) {
+      // Extract the username from the pathname
+      var username = url.pathname.slice(2);
+      
+      // Update the UI with the extracted username
+      $("#username").text("Username: " + username);
+    } else {
+      // Display a message if the URL format doesn't match
+      //$("#username").text("This page doesn't match the format website.com/@username");
+    }
+  });
+  </script>
+</body>
+</html>
+
+// open respective base wallet onchain
+
