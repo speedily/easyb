@@ -45,7 +45,7 @@ Bob(Seller)-x Indian Fintech: We Need $1 Billion In Funding To Build It
 
 Bob(Seller)-->Leading Crypto Platform: In Old System Bob Will Go Though So Many People...
 Bob(Seller)->EasyBase: Wow... Easybase, Its Already Done?
-Note right of EasyBase: Bob thinks a long<br/>long time, so long<br/>that the road does<br/>not fix on time.
+Note right of EasyBase: Bob thinks a long<br/>long time, so <br/> the crypto payment does<br/>not come on time.
 ```
 
 And  a flow chart:
